@@ -13,7 +13,7 @@ export default defineComponent({
     const files = new Array(3).fill(0).map((_, idx: number) => {
       return {
         id: idx,
-        name: '文件名',
+        name: '文件名' + idx,
         size: Math.pow(1024, idx + 1) * (idx + 1),
         type: (idx + 1) % 3,
         thumb: 'xxx',
